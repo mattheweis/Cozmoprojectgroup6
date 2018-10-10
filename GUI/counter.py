@@ -9,6 +9,7 @@
 #         if countDown == 0:
 #             print("Smile!")
 #             break
+# print (countdown())
 import tkinter as tk
 
 class ExampleApp(tk.Tk):

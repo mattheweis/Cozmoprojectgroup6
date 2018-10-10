@@ -1,5 +1,6 @@
 import tkinter as tk
-import camera
+# import camera
+# import cozmo
 
 counter = 5
 def counter_label(label):
@@ -11,7 +12,9 @@ def counter_label(label):
     label.after(1000, count)
     counter-=1
     if counter==0:
-        counter="Smile!!!"
+      counter="Smile!!!"
+      # cozmo.run_program(camera.cozmo_face_mirror)
+
   count()
 
 def getvalue(event):
@@ -81,7 +84,7 @@ letsgotext= tk.Label(loadingpage, text="Lets Play!!!")
 letsgotext.config(font="System, 50", padx=300)
 letsgotext.grid(row=0, sticky="news")
 countinglabel = tk.Label(loadingpage)
-nextbutton.bind("<Button-1>", counter_label(countinglabel))
+# nextbutton.bind("<Button-1>", counter_label(countinglabel))
 countinglabel.config(font="System, 150")
 countinglabel.grid(row=1, sticky="news")
 
